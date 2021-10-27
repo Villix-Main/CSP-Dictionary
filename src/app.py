@@ -27,6 +27,10 @@ def index():
 def search():
     search_result = request.args.get('term')
     allTerms = DictionaryTerm.query.filter(DictionaryTerm.term.like("%"+search_result+"%")).all()
+
+    if len(allTerms) < 1:
+        return 'do something here please'
+
     return render_template('search_result.html', terms=allTerms)
 
 
