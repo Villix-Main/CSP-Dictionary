@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<title>CSP Dictionary</title>
+{% endblock %}
+
+
+{% block body %}
+
+<h2>Here is your result</h2>
+
+{% for term in terms %}
+<div class="main-content">
+   <h2>{{ term.definition }}</h2>
+</div>
+{% endfor %}
+
+{% endblock %}

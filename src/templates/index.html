@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<title>CSP Dictionary</title>
+{% endblock %}
+
+
+{% block body %}
+
+<h2>Search a term</h2>
+
+<div class="form">
+    <form action="/search" method="GET">
+        <input type="search" name="term" id="term">
+        <input type="submit" value="Search for term">
+    </form>
+</div>
+
+{% endblock %}
