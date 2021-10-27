@@ -2,3 +2,48 @@ body
 {
     font-family: 'Lato', sans-serif;
 }
+
+body
+{
+    text-align: center;
+    background: linear-gradient(to right, #8941a4, #555ba7);
+    color: white;
+}
+
+h1
+{
+    font-size: 50px;
+}
+h2
+{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+
+
+.search-form input[type="search"]
+{
+    font-size: 25px;
+    color: #7f7f7f;
+    border: none;
+    border-radius: 30px;
+    width: 400px;
+    height: 50px;
+    padding: 14px;
+    padding-left: 20px;
+}
+.search-form input[type="search"]
+{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.search-form input[type="search"]:focus 
+{
+    outline: none !important;
+}
