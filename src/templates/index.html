@@ -12,12 +12,12 @@
 
 <div class="search-form">
     <form action="/search" method="GET">
-        <input type="search" name="term" id="term" required="required" placeholder="Type to search...">
+        <input type="search" name="term" id="term" required="required" required pattern=".*\S+.*" placeholder="Type to search...">
     </form>
 </div>
 
 <div class="editdb-buttons">
-    <button><a href="/add_item"></a></button>
+    <button style="width: 500px;"><a href="/additem"></a></button>
 </div>
 
 
