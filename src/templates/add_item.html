@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<title>CSP Dictionary</title>
+{% endblock %}
+
+
+{% block body %}
+
+<h2>Add Item</h2>
+
+<div class="main-content">
+    <div>
+        <form action="/additem" method="POST">
+            <input type="text" name="term" id="term" placeholder="enter term...">
+            <input type="text" name="definition" id="definition" placeholder="enter definition...">
+            <input type="submit" value="Add Term">
+        </form>
+    </div>
+</div>
+
+
+
+{% endblock %}
