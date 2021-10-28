@@ -49,8 +49,6 @@ def addItem():
     else:
         return render_template('add_item.html')
 
-    return render_template('add_item.html')
-
 
 if __name__ == "__main__":
     app.run(debug=True)
