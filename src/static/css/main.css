@@ -33,16 +33,6 @@ h2
     padding: 14px;
     padding-left: 20px;
 }
-.search-form input[type="search"]
-{
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
 .search-form input[type="search"]:focus 
 {
     outline: none !important;
