@@ -32,6 +32,24 @@ def search():
     return render_template('search_result.html', terms=allTerms)
 
 
+@app.route('/additem', methods=["GET", "POST"])
+def addItem():
+    if request.method == 'POST':
+        term_content = request.form['term']
+        term_definition = request.form['definition']
+
+        new_term = DictionaryTerm(term=term_content, definition=term_definition)
+
+        try:
+            db.session.add(new_term)
+            db.session.commit()
+            return redirect('/')
+        except:
+            return 'There was an issue adding the term'
+    else:
+        return render_template('add_item.html')
+
+    return render_template('add_item.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
