@@ -10,10 +10,19 @@
 
 <h2>Here is your result</h2>
 
+{% if terms|length < 1 %}
+<div class="no-result">
+   <h2>There were no results for your search</h2>
+</div>
+{% else %}
+
 {% for term in terms %}
 <div class="main-content">
    <h2>{{ term.definition }}</h2>
 </div>
 {% endfor %}
+
+
+{% endif %}
 
 {% endblock %}
